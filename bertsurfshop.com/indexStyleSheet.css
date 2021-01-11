@@ -1,0 +1,444 @@
+ul{
+	list-style-type: square; background-color: white; color: black;
+	padding-right:15px; color: rgb(82,102,95);
+}
+
+body{
+	font-family: win95;
+	background-color:white;
+	padding:0px;
+	margin:0px;
+	
+}
+	
+p{
+	
+	font-family: win95;
+	font-size: 15px;
+	
+}
+
+h1{
+	font-size:60px; font-family: calibri;
+	font-weight: normal; padding: 0px;
+    color: white;
+}
+
+h2{
+	font-size:60px; font-family: calibri;
+	font-weight: normal; padding: 0px;
+    color: black;
+}
+	
+
+@font-face {
+   font-family: win95;
+   src: url(fonts/MyFont.woff);
+   
+}
+
+.flex-container{
+	display: -webkit-box;      
+	display: -moz-box;         
+	display: -ms-flexbox;     
+	display: -webkit-flex;     
+	display: flex;    
+
+	flex-flow:row;  
+	height:100%;
+	position:absolute;
+	width:100%;
+
+
+	/*flex-wrap:wrap;*/
+}
+
+.box{
+	padding: 20px;
+	color:white;
+	font-size:22px;
+	background-color: crimson;
+	border:1px solid white;
+	flex:1;
+	-webkit-flex:1;
+	text-align:center;
+	min-width:200px;	
+
+
+
+}
+
+.splash {
+    background-image: url(1.jpg);
+    width:100%;
+    background-size:cover;
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease;
+    flex:none;
+}
+
+.flex1:hover{
+	flex:4;
+	-webkit-flex:4; 
+}
+
+/*Set fixed background image to the main page header*/
+.logoPanel {
+	background-color: white;
+	background-size: 100%;
+	height: 400px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Set fixed background image to the resume button*/
+.itemsPanel {
+	background-image: url("images/zodiac.jpg");
+	height: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.aboutHolder {
+	width: 100%;
+	height: auto;
+	background-color: white;
+	
+}
+
+#aboutImages {
+	
+	width: 100%;
+	height: auto;
+	padding: 0px;
+
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.aboutPanel {
+	
+	
+	height: 100%;
+	max-height: 700px;
+	
+    overflow-y: scroll;
+
+}
+
+.aboutPanelLeft {
+	background-color: white;
+	width: 45%;
+	height: 100%;
+	float: left;
+	color: black;
+	padding: 3%;
+	padding-top: 0px;
+	
+}
+
+.aboutPanelRight {
+	background-color: white;
+	width: 48%;
+	height: 100%;
+	float: left;
+	color: black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.contactFormHolder {
+	background-color: white;
+	width: 50%;
+	height: 100%;
+	float: none;
+	color: black;
+	padding: 3%;
+	padding-top: 0px;
+	
+}
+
+/*Set fixed background image to the code samples button*/
+.contactPanel {
+	background-image: url("images/boards.jpg");
+	height: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
+
+/*Set fixed background image to the about me button*/
+.cartPanel {
+	background-image: url("images/fins.jpg");
+	height: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
+
+.fancyPanel {
+	background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%) ;
+	height: 300px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media only screen and (max-device-width: 1500px) {
+  .headerPanel {
+    background-attachment: scroll;
+  }
+  .resumePanel {
+    background-attachment: scroll;
+  }
+  .codePanel {
+    background-attachment: scroll;
+  }
+  .aboutPanel {
+    background-attachment: scroll;
+  }
+  
+}
+
+.References {
+	color: white;
+}	
+	
+.qL {
+	float:left;
+	position: relative;
+	width: 30%;
+	height: 30%;
+	padding-bottom: 30%;
+	/* = width for a 1:1 aspect ratio */
+	margin: 5%;
+	background-color: #1E1E1E;
+	overflow: hidden;
+}
+
+.bG {
+	background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+    color:#fff;
+}
+
+.quickLinkHolder1 {
+	
+	background-image: url("images/merch.jpg");
+	box-shadow: 0px 0px 15px 4px black;
+}
+
+.quickLinkHolder2 {
+	background-image: url("images/fins.jpg");
+	box-shadow: 0px 0px 15px 4px black;
+}
+
+.quickLinkHolder3 {
+	background-image: url("images/boards.jpg");
+	box-shadow: 0px 0px 15px 4px black;
+}
+
+.divContainer {
+	position: absolute;
+	height: 90%;
+	width: 90%;
+	
+	
+}
+
+.divSquares {
+	display: table;
+	width: 100%;
+	height: 100%;
+    
+	
+}
+
+.table-cell{
+	
+    display:tabel-cell;
+   
+}
+
+
+
+.button2, .button3, .button4 {
+	margin-left: 10px;
+    height: auto;
+    color: White;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 2px 4px 5px rgba(0,0,0,1);
+	position: absolute;
+	top: 50%;
+	left:50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	
+}
+
+.button2:hover, .button3:hover, .button4:hover {
+	
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+	font-size: 32px;
+	
+}
+
+
+
+.button {
+	position: absolute;
+	background-color: rgb(255,200,0);
+    border: 2px solid white;
+    color: White;
+    padding: 15px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border-radius: 4px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+	
+	
+}
+
+.button:hover {
+     
+	background-image: linear-gradient(to bottom, 
+			rgb(255,200,0), rgb(255, 255, 255, 0.3)); 
+    border: 2px solid white;
+    color: White;
+    padding: 13px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border-radius: 4px;
+    box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.24);
+	
+}
+
+.icon-bar {
+	width: 100%; /* Full-width */
+	height: 75px;
+	background-color: rgb(255,200,0); /* Berts OG Yellow background */
+	overflow: auto; /* Overflow due to float */
+
+}
+
+.icon-bar a {
+	float: left; /* Float links side by side */
+	text-align: center; /* Center-align text */
+	width: 25%; /* Equal width (5 icons with 20% width each = 100%) */
+	padding-bottom: 10px;/* Some top and bottom padding */
+	transition: all 0.3s ease; /* Add transition for hover effects */
+	color: black; /* White text color */
+	font-size: 36px; /* Increased font size */
+	height: 100%;
+}
+
+.icon-bar a:hover {
+	background-image: linear-gradient(to bottom, 
+			rgb(255,200,0), rgb(155, 100, 0)); /* Add a hover color */
+}
+
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	width: 25%;
+	height: 100%;
+	font-size: 5px;
+}
+
+.dropdown:hover {
+	background-image: linear-gradient(to bottom, 
+			rgb(255,200,0), rgb(155, 100, 0)); 
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: black;
+	background-color: inherit;
+	font-family: inherit;
+	height: 100%;
+}
+
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgb(255,200,0,0.5);
+	width:25%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	width: 100%
+}
+
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.logInHolder {
+	width: 75%;
+	padding-bottom: 50px;
+}
+
+#shadowGames {
+	 opacity: 1;
+	 width: 95%;
+	 max-width: 600px;
+	 height: auto;
+}
+
+#quickLinks {
+	 width: 200px;
+	 max-width: 600px;
+	 height: auto;
+}
+
+#headMain, #samples, #about, #phpSample {
+    padding-top: 25px;
+    margin-top:50px; 
+    opacity: 1.0;
+    
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.24);
+	
+}
+
+
